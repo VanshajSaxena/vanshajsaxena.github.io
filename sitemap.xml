@@ -2,10 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://vanshaj.xyz/archives/</loc>
+  </url><url>
     <loc>https://vanshaj.xyz/categories/</loc>
   </url><url>
     <loc>https://vanshaj.xyz/tags/</loc>
   </url><url>
-    <loc>https://vanshaj.xyz/</loc>
+    <loc>https://vanshaj.xyz/topics/</loc>
   </url>
 </urlset>
