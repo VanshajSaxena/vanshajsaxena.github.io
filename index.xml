@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Home on @vanshaj.xyz</title>
-    <link>https://vanshajsaxena.github.io/</link>
-    <description>Recent content in Home on @vanshaj.xyz</description>
-    <generator>Hugo -- 0.134.0</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate>
-    <atom:link href="https://vanshajsaxena.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://vanshajsaxena.github.io/about/</link>
-      <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
-      <guid>https://vanshajsaxena.github.io/about/</guid>
-      <description>&lt;p&gt;A Java developer, Systems Administrator, Linux enthusiast, and student, I am passionate about Linux and the open-source world, constantly exploring its boundaries and my own. I am a learner and a problem solver.&lt;/p&gt;
-&lt;p&gt;As a developer, I enjoy exploring different approaches to problem-solving, often creating and developing unconventional methods to tackle challenges.&lt;/p&gt;
-&lt;h2 id=&#34;connect-with-me&#34;&gt;Connect with Me&lt;/h2&gt;
-&lt;p&gt;You can reach out to me here on GitHub, or contact me directly via email at &lt;a href=&#34;mailto:vs110405@outlook.com&#34;&gt;vs110405@outlook.com&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Home on @vanshaj.xyz</title><link>vanshaj.xyz/</link><description>Recent content in Home on @vanshaj.xyz</description><generator>Hugo -- 0.134.0</generator><language>en</language><lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate><atom:link href="vanshaj.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>vanshaj.xyz/about/</link><pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate><guid>vanshaj.xyz/about/</guid><description>&lt;p>A Java developer, Systems Administrator, Linux enthusiast, and student, I am passionate about Linux and the open-source world, constantly exploring its boundaries and my own. I am a learner and a problem solver.&lt;/p>
+&lt;p>As a developer, I enjoy exploring different approaches to problem-solving, often creating and developing unconventional methods to tackle challenges.&lt;/p>
+&lt;h2 id="connect-with-me">Connect with Me&lt;/h2>
+&lt;p>You can reach out to me here on GitHub, or contact me directly via email at &lt;a href="mailto:vs110405@outlook.com">vs110405@outlook.com&lt;/a>.&lt;/p></description></item></channel></rss>
