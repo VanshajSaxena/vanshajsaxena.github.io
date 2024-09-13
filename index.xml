@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on @vanshaj.xyz</title>
-    <link>https://vanshaj.xyz/</link>
+    <link>https://vanshajsaxena.github.io/</link>
     <description>Recent content in Home on @vanshaj.xyz</description>
     <generator>Hugo -- 0.134.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate>
-    <atom:link href="https://vanshaj.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vanshajsaxena.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://vanshaj.xyz/about/</link>
+      <link>https://vanshajsaxena.github.io/about/</link>
       <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
-      <guid>https://vanshaj.xyz/about/</guid>
+      <guid>https://vanshajsaxena.github.io/about/</guid>
       <description>&lt;p&gt;A Java developer, Systems Administrator, Linux enthusiast, and student, I am passionate about Linux and the open-source world, constantly exploring its boundaries and my own. I am a learner and a problem solver.&lt;/p&gt;
 &lt;p&gt;As a developer, I enjoy exploring different approaches to problem-solving, often creating and developing unconventional methods to tackle challenges.&lt;/p&gt;
 &lt;h2 id=&#34;connect-with-me&#34;&gt;Connect with Me&lt;/h2&gt;
