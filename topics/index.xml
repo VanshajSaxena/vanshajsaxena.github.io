@@ -6,6 +6,21 @@
     <description>Recent content in Topics on @vanshaj.xyz</description>
     <generator>Hugo -- 0.134.0</generator>
     <language>en</language>
+    <lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate>
     <atom:link href="https://vanshaj.xyz/topics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://vanshaj.xyz/topics/java/</link>
+      <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
+      <guid>https://vanshaj.xyz/topics/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://vanshaj.xyz/topics/linux/</link>
+      <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
+      <guid>https://vanshaj.xyz/topics/linux/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
