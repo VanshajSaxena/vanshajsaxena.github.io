@@ -9,12 +9,88 @@
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://vanshaj.xyz/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>This Site</title>
+      <link>https://vanshaj.xyz/projects/this-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vanshaj.xyz/projects/this-site/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Neovim</title>
+      <link>https://vanshaj.xyz/projects/neovim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vanshaj.xyz/projects/neovim/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://neovim.io/&#34;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; is a hyperextensible modal text editor based
+on Vim.&lt;/p&gt;
+&lt;p&gt;I started using Vim during the first year of my engineering and instantly knew
+it is an incredible tool. I new use vim keybinding in everything that I do,
+from text editing to browsing the web.&lt;/p&gt;
+&lt;p&gt;Neovim is highly configurable and extensible, this is one of its qualities
+among others. It is configured using a simple language called
+&lt;a href=&#34;https://www.lua.org/about.html&#34;&gt;Lua&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lua is a powerful, efficient, lightweight, embeddable scripting language. It
+supports procedural programming, object-oriented programming, functional
+programming, data-driven programming, and data description.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nix and NixOS</title>
+      <link>https://vanshaj.xyz/projects/nix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vanshaj.xyz/projects/nix/</guid>
+      <description>&lt;hr&gt;</description>
+    </item>
+    <item>
       <title>Fable</title>
       <link>https://vanshaj.xyz/projects/fable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/fable/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;Fable is a Software as a Service (SaaS) Library Management System (LMS) Software.&lt;/p&gt;</description>
+&lt;p&gt;Fable is a Software as a Service (SaaS) Library Management System (LMS)
+Software.&lt;/p&gt;
+&lt;p&gt;I worked on Fable as a part of an Internship at Infosys Limited,
+Mysuru, which I received through a challenging selection process, I have a post
+about it, &lt;a href=&#34;https://vanshaj.xyz/posts/got-selected/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the videos of the actual developed applications.&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+
+  &lt;div class=&#34;align-center&#34;&gt;
+    &lt;video controls width=&#34;300&#34; height=&#34;450&#34;&gt;
+      &lt;source src=&#34;https://vanshaj.xyz/projects/fable/FableForMembersandUsers.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+  &lt;div class=&#34;align-center&#34;&gt;
+    &lt;video controls width=&#34;600&#34; height=&#34;450&#34;&gt;
+      &lt;source src=&#34;https://vanshaj.xyz/projects/fable/FableForAdminsandLibrarians.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      Your browser does not support the video tag.
+    &lt;/video&gt;
+  &lt;/div&gt;
+
+
+&lt;hr&gt;
+&lt;h3 id=&#34;development-background&#34;&gt;Development Background&lt;/h3&gt;
+&lt;p&gt;The Fable project is subdivided into two application projects, one is for the
+users and the other is only for library management and administrators. I worked
+as the &lt;strong&gt;backend architect&lt;/strong&gt; and &lt;strong&gt;developer&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CareNote</title>
@@ -27,8 +103,8 @@
 with a problem that has some meaning and is relevant to at least some people.
 Then develop the actual solution that can solve &lt;em&gt;this real problem in the real
 world&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Before this I had always wrote small programs that only served me, mainly in configuring my development experience in Neovim, which is a small project in
-itself maintained by me.&lt;/p&gt;</description>
+&lt;p&gt;Before this I had always wrote small programs that only served me, mainly in
+configuring my development experience in &lt;a href=&#34;https://vanshaj.xyz/projects/neovim/&#34;&gt;Neovim&lt;/a&gt;, which is a small project in itself maintained by me.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
