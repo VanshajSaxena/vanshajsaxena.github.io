@@ -23,13 +23,6 @@ might &lt;em&gt;not&lt;/em&gt; think of.&lt;/p&gt;
 email at &lt;a href=&#34;mailto:vs110405@outlook.com&#34;&gt;vs110405@outlook.com&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>This Site</title>
-      <link>https://vanshaj.xyz/projects/this-site/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/this-site/</guid>
-      <description>&lt;hr&gt;</description>
-    </item>
-    <item>
       <title>Neovim</title>
       <link>https://vanshaj.xyz/projects/neovim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -50,10 +43,19 @@ programming, data-driven programming, and data description.&lt;/p&gt;</descripti
     </item>
     <item>
       <title>Nix and NixOS</title>
-      <link>https://vanshaj.xyz/projects/nix/</link>
+      <link>https://vanshaj.xyz/projects/nix-and-nixos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/nix/</guid>
-      <description>&lt;hr&gt;</description>
+      <guid>https://vanshaj.xyz/projects/nix-and-nixos/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt; is a GNU/Linux distribution that focuses on
+reproducibility, declarative configuration, and robust package management.&lt;/p&gt;
+&lt;p&gt;If you have ever used GNU/Linux Operating System you must know a large part of
+maintaining an installation of a Linux Distribution is having to edit some
+configuration files.&lt;/p&gt;
+&lt;p&gt;The GNU/Linux Operating System is so malleable that you can break it into
+pieces of independent software and put them back together in a different way,
+and it would work if done correctly. But this power comes with the
+responsibility of having to manage the complexity of the underlying system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fable</title>
