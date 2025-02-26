@@ -4,7 +4,7 @@
     <title>Home on @vanshaj.xyz</title>
     <link>https://vanshaj.xyz/</link>
     <description>Recent content in Home on @vanshaj.xyz</description>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate>
     <atom:link href="https://vanshaj.xyz/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,36 @@
       <link>https://vanshaj.xyz/about/</link>
       <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
       <guid>https://vanshaj.xyz/about/</guid>
-      <description>&lt;p&gt;A Developer, Administrator, and GNU/Linux geek. I am passionate about software, development tools and open-source constantly exploring their boundaries and my own. I learn through documentation, books and articles.&lt;/p&gt;
-&lt;p&gt;I like approaching to problem with all non-conventional ways of solution you might &lt;em&gt;not&lt;/em&gt; think of.&lt;/p&gt;
+      <description>&lt;p&gt;A Developer, Administrator, and GNU/Linux geek. I am passionate about software,
+development tools and open-source constantly exploring their boundaries and my
+own. I learn through documentation, books and articles.&lt;/p&gt;
+&lt;p&gt;I like approaching to problem with all non-conventional ways of solution you
+might &lt;em&gt;not&lt;/em&gt; think of.&lt;/p&gt;
 &lt;h2 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h2&gt;
-&lt;p&gt;Connect with me on &lt;a href=&#34;https://linkedin.com/in/vanshajsaxena2024&#34;&gt;LinkedIn&lt;/a&gt; or via email at &lt;a href=&#34;mailto:vs110405@outlook.com&#34;&gt;vs110405@outlook.com&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Connect with me on &lt;a href=&#34;https://linkedin.com/in/vanshajsaxena2024&#34;&gt;LinkedIn&lt;/a&gt; or via
+email at &lt;a href=&#34;mailto:vs110405@outlook.com&#34;&gt;vs110405@outlook.com&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fable</title>
+      <link>https://vanshaj.xyz/projects/fable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vanshaj.xyz/projects/fable/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Fable is a Software as a Service (SaaS) Library Management System (LMS) Software.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CareNote</title>
+      <link>https://vanshaj.xyz/projects/carenote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://vanshaj.xyz/projects/carenote/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;My first team project was &lt;strong&gt;CareNote&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It was in intense journey to first come up
+with a problem that has some meaning and is relevant to at least some people.
+Then develop the actual solution that can solve &lt;em&gt;this real problem in the real
+world&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Before this I had always wrote small programs that only served me, mainly in configuring my development experience in Neovim, which is a small project in
+itself maintained by me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Got Selected</title>
@@ -25,9 +51,13 @@
       <guid>https://vanshaj.xyz/posts/got-selected/</guid>
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;the-selection&#34;&gt;The Selection&lt;/h2&gt;
-&lt;p&gt;On the day of January 29, 2024 I was selected for a semester wide program powered by &lt;strong&gt;Infosys&lt;/strong&gt; and &lt;strong&gt;Apple&lt;/strong&gt; for iOS development.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://vanshaj.xyz/posts/bootcamp/&#34;&gt;Bootcamp&lt;/a&gt; was a tremendous experience. Out of around 900 students, 100 students were selected.&lt;/p&gt;
-&lt;p&gt;This marked a new beginning for my full-day college schedule, which I had been following for the past 2 years. What was about to come proved even challenging than what I had anticipated.&lt;/p&gt;</description>
+&lt;p&gt;On the day of January 29, 2024 I was selected for a semester wide program
+powered by &lt;strong&gt;Infosys&lt;/strong&gt; and &lt;strong&gt;Apple&lt;/strong&gt; for iOS development.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://vanshaj.xyz/posts/bootcamp/&#34;&gt;Bootcamp&lt;/a&gt; was a tremendous experience.
+Out of around 900 students, 100 students were selected.&lt;/p&gt;
+&lt;p&gt;This marked a new beginning for my full-day college schedule, which I had been
+following for the past 2 years. What was about to come proved even challenging
+than what I had anticipated.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bootcamp</title>
@@ -35,17 +65,14 @@
       <pubDate>Thu, 25 Jan 2024 03:36:02 +0530</pubDate>
       <guid>https://vanshaj.xyz/posts/bootcamp/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;During the last week of December 2024, I signed up for a Bootcamp at my college designed to select students from the Computer Science and Engineering (CSE) branch for a semester-long program.
-This experience marked a new chapter in how I would spend my time in college. I was eager to learn new concepts and gain insights into industry standards.&lt;/p&gt;
-&lt;p&gt;The week-long Bootcamp was an intense assessment of my knowledge across various domains, and I genuinely enjoyed it.
-Additionally, I made some friends during this time, and we still keep in touch today.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CareNote</title>
-      <link>https://vanshaj.xyz/projects/carenote/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/carenote/</guid>
-      <description>&lt;hr&gt;</description>
+&lt;p&gt;During the last week of December 2024, I signed up for a Bootcamp at my college
+designed to select students from the Computer Science and Engineering (CSE)
+branch for a semester-long program. This experience marked a new chapter in how
+I would spend my time in college. I was eager to learn new concepts and gain
+insights into industry standards.&lt;/p&gt;
+&lt;p&gt;The week-long Bootcamp was an intense assessment of my knowledge across various
+domains, and I genuinely enjoyed it. Additionally, I made some friends during
+this time, and we still keep in touch today.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

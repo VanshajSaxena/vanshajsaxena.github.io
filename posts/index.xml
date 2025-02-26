@@ -4,7 +4,7 @@
     <title>Blog on @vanshaj.xyz</title>
     <link>https://vanshaj.xyz/posts/</link>
     <description>Recent content in Blog on @vanshaj.xyz</description>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 05 Feb 2024 03:27:56 +0530</lastBuildDate>
     <atom:link href="https://vanshaj.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -15,9 +15,13 @@
       <guid>https://vanshaj.xyz/posts/got-selected/</guid>
       <description>&lt;hr&gt;
 &lt;h2 id=&#34;the-selection&#34;&gt;The Selection&lt;/h2&gt;
-&lt;p&gt;On the day of January 29, 2024 I was selected for a semester wide program powered by &lt;strong&gt;Infosys&lt;/strong&gt; and &lt;strong&gt;Apple&lt;/strong&gt; for iOS development.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://vanshaj.xyz/posts/bootcamp/&#34;&gt;Bootcamp&lt;/a&gt; was a tremendous experience. Out of around 900 students, 100 students were selected.&lt;/p&gt;
-&lt;p&gt;This marked a new beginning for my full-day college schedule, which I had been following for the past 2 years. What was about to come proved even challenging than what I had anticipated.&lt;/p&gt;</description>
+&lt;p&gt;On the day of January 29, 2024 I was selected for a semester wide program
+powered by &lt;strong&gt;Infosys&lt;/strong&gt; and &lt;strong&gt;Apple&lt;/strong&gt; for iOS development.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://vanshaj.xyz/posts/bootcamp/&#34;&gt;Bootcamp&lt;/a&gt; was a tremendous experience.
+Out of around 900 students, 100 students were selected.&lt;/p&gt;
+&lt;p&gt;This marked a new beginning for my full-day college schedule, which I had been
+following for the past 2 years. What was about to come proved even challenging
+than what I had anticipated.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bootcamp</title>
@@ -25,10 +29,14 @@
       <pubDate>Thu, 25 Jan 2024 03:36:02 +0530</pubDate>
       <guid>https://vanshaj.xyz/posts/bootcamp/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;During the last week of December 2024, I signed up for a Bootcamp at my college designed to select students from the Computer Science and Engineering (CSE) branch for a semester-long program.
-This experience marked a new chapter in how I would spend my time in college. I was eager to learn new concepts and gain insights into industry standards.&lt;/p&gt;
-&lt;p&gt;The week-long Bootcamp was an intense assessment of my knowledge across various domains, and I genuinely enjoyed it.
-Additionally, I made some friends during this time, and we still keep in touch today.&lt;/p&gt;</description>
+&lt;p&gt;During the last week of December 2024, I signed up for a Bootcamp at my college
+designed to select students from the Computer Science and Engineering (CSE)
+branch for a semester-long program. This experience marked a new chapter in how
+I would spend my time in college. I was eager to learn new concepts and gain
+insights into industry standards.&lt;/p&gt;
+&lt;p&gt;The week-long Bootcamp was an intense assessment of my knowledge across various
+domains, and I genuinely enjoyed it. Additionally, I made some friends during
+this time, and we still keep in touch today.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
