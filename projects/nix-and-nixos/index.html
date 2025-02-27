@@ -117,8 +117,8 @@ responsibility of having to manage the complexity of the underlying system.">
   "keywords": [
     
   ],
-  "articleBody": " NixOS is a GNU/Linux distribution that focuses on reproducibility, declarative configuration, and robust package management.\nIf you have ever used GNU/Linux Operating System you must know a large part of maintaining an installation of a Linux Distribution is having to edit some configuration files.\nThe GNU/Linux Operating System is so malleable that you can break it into pieces of independent software and put them back together in a different way, and it would work if done correctly. But this power comes with the responsibility of having to manage the complexity of the underlying system.\nNixOS gives the user the power to handle this complexity in a declarative way. NixOS does this with the use of its purely functional package manager, Nix.\nNix Nix is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.\nSo if you have ever used a package manager like npm, it maintains a lock file that tracks the exact version of the packages you are using in your project. This is to ensure that the project will work the same way on different machines.\nIn a similar fashion Nix Flakes provide a standard way to write Nix expressions (and therefore packages) whose dependencies are version-pinned in a lock file, improving reproducibility of Nix installations.\nBelow is an example of a really simple Nix Flake:\n{ description = \"A Simple Nix Flake\"; outputs = { self }: { packages.x86_64-linux.hello = with import {}; hello; }; } Nix Flakes are still and experimental feature in Nix Package Manager, but they are slowly moving towards stability.\nNixOS I faced this problem of traditionally managing the state (packages) of my Linux System imperatively. This caused conflicts and inconsistencies in my environment in various ways. Also I never knew what state of my system is leading to an issue. It is very hard to pin point it, when you build you system imperatively rather than declaratively.\nvanshaj@NIXOS /etc/nixos $ lt drwxr-xr-x - root 26 Jul 2024 . lrwxrwxrwx - root 26 Jul 2024 ├── configuration.nix -\u003e /home/vanshaj/nixos/configuration.nix lrwxrwxrwx - root 26 Jul 2024 ├── flake.lock -\u003e /home/vanshaj/nixos/flake.lock lrwxrwxrwx - root 26 Jul 2024 ├── flake.nix -\u003e /home/vanshaj/nixos/flake.nix lrwxrwxrwx - root 26 Jul 2024 ├── hardware-configuration.nix -\u003e /home/vanshaj/nixos/hardware-configuration.nix lrwxrwxrwx - root 26 Jul 2024 └── home.nix -\u003e /home/vanshaj/nixos/home.nix Now, whenever there is a problem in the system you could literally git bisect your system configuration like a traditional software.\nHere is the source code for anyone interested in nerding out.\n",
-  "wordCount" : "417",
+  "articleBody": " NixOS is a GNU/Linux distribution that focuses on reproducibility, declarative configuration, and robust package management.\nIf you have ever used GNU/Linux Operating System you must know a large part of maintaining an installation of a Linux Distribution is having to edit some configuration files.\nThe GNU/Linux Operating System is so malleable that you can break it into pieces of independent software and put them back together in a different way, and it would work if done correctly. But this power comes with the responsibility of having to manage the complexity of the underlying system.\nNixOS gives the user the power to handle this complexity in a declarative way. NixOS does this with the use of its purely functional package manager, Nix.\nNix Nix is a powerful package manager for Linux and other Unix systems that makes package management reliable and reproducible.\nSo if you have ever used a package manager like npm, it maintains a lock file that tracks the exact version of the packages you are using in your project. This is to ensure that the project will work the same way on different machines.\nIn a similar fashion Nix Flakes provide a standard way to write Nix expressions (and therefore packages) whose dependencies are version-pinned in a lock file, improving reproducibility of Nix installations.\nBelow is an example of a really simple Nix Flake:\n# flake.nix { description = \"A Simple Nix Flake\"; # Human readable string that describes the flake outputs = { self }: { packages.x86_64-linux.hello = with import {}; hello; }; } This entire file is a Nix expression that evaluates to an attribute set. Looking closely you’ll find the expression in itself is an attribute set.\nHere outputs is a function that takes an attribute set as an argument, we are only using one parameter here, self, which is a reference to the current flake.\npackages.x86_64-linux.hello is just a reference to the package hello through the x86_64-linux key contained in the packages attribute set.\nNixOS I faced this problem of traditionally managing the state (packages) of my Linux System imperatively. This always caused conflicts and inconsistencies in my environment in various ways. Also I never knew what state of my system is leading to an issue. It is very hard to pin point it, when you build you system imperatively rather than declaratively.\nNixOS allows you to interact with your operating system programmatically, more specifically you can declare your packages and configurations and build your system like any other software project that you build.\n# /etc/nixos/flake.nix { description = \"NixOS System Flake\"; # Input to the flake inputs = { nixpkgs-stable.url = \"github:NixOS/nixpkgs/nixos-24.11\"; nixpkgs-unstable.url = \"github:NixOS/nixpkgs/nixos-unstable\"; }; # Flake output outputs = { nixpkgs-stable, nixpkgs-unstable, ... }: { # `NIXOS` is hostname here, can be anything nixosConfigurations.NIXOS = nixpkgs-unstable.lib.nixosSystem rec { # Architecture system = \"x86_64-linux\"; # Used to provide special arguments to the flake output specialArgs = { nixos-stable = import nixpkgs-stable { inherit system; config.allowUnfree = true; }; }; # Nix module to be included in the flake modules = [ ./configuration.nix ]; }; }; } As you see, this is how we define a flake that helps to define our dependencies declaratively, in any project. For this system flake, the dependencies are the packages that we require in our environment.\n# /etc/nixos/home.nix { inputs-from-flake, ... }: { home.username = \"vanshaj\"; home.homeDirectory = \"/home/vanshaj\"; home.packages = with inputs-from-flake; [ # Define your dependencies ]; # basic configuration of git programs.git = { enable = true; userName = \"Vanshaj Saxena\"; userEmail = \"vs110405@outlook.com\"; }; home.stateVersion = \"24.05\"; # Let home Manager install and manage itself. programs.home-manager.enable = true; } You can further extend your flake with the module system provided with Nix.\nvanshaj@NIXOS /etc/nixos $ lt drwxr-xr-x - root 26 Jul 2024 . lrwxrwxrwx - root 26 Jul 2024 ├── configuration.nix -\u003e /home/vanshaj/nixos/configuration.nix lrwxrwxrwx - root 26 Jul 2024 ├── flake.lock -\u003e /home/vanshaj/nixos/flake.lock lrwxrwxrwx - root 26 Jul 2024 ├── flake.nix -\u003e /home/vanshaj/nixos/flake.nix lrwxrwxrwx - root 26 Jul 2024 ├── hardware-configuration.nix -\u003e /home/vanshaj/nixos/hardware-configuration.nix lrwxrwxrwx - root 26 Jul 2024 └── home.nix -\u003e /home/vanshaj/nixos/home.nix This makes debugging and maintaining your project much easier. Now, whenever there is a problem in the system you could literally git bisect your system configuration like a traditional software.\nNot only Nix allows to you build declaratively, it guarantees reproducibility and easy rollbacks.\nThis immutability and reproducibility is the cause I use Nix for my projects and my system.\nSource code\n",
+  "wordCount" : "743",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -269,21 +269,85 @@ standard way to write Nix expressions (and therefore packages) whose
 dependencies are version-pinned in a lock file, improving reproducibility of
 Nix installations.</p>
 <p>Below is an example of a really simple Nix Flake:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A Simple Nix Flake&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span><span style="color:#75715e">#  flake.nix</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A Simple Nix Flake&#34;</span>; <span style="color:#75715e"># Human readable string that describes the flake</span>
 </span></span><span style="display:flex;"><span>  outputs <span style="color:#f92672">=</span> { self }: {
 </span></span><span style="display:flex;"><span>    packages<span style="color:#f92672">.</span>x86_64-linux<span style="color:#f92672">.</span>hello <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> <span style="color:#f92672">import</span> <span style="color:#e6db74">&lt;nixpkgs&gt;</span> {}; hello;
 </span></span><span style="display:flex;"><span>  };
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Nix Flakes are still and experimental feature in Nix Package Manager, but they
-are slowly moving towards stability.</p>
+</span></span></code></pre></div><p>This entire file is a Nix expression that evaluates to an attribute set.
+Looking closely you&rsquo;ll find the expression in itself is an attribute set.</p>
+<p>Here <code>outputs</code> is a function that takes an attribute set as an argument, we are
+only using one parameter here, <code>self</code>, which is a reference to the current flake.</p>
+<p><code>packages.x86_64-linux.hello</code> is just a reference to the package <code>hello</code>
+through the <code>x86_64-linux</code> key contained in the <code>packages</code> attribute set.</p>
 <hr>
 <h3 id="nixos">NixOS<a hidden class="anchor" aria-hidden="true" href="#nixos">#</a></h3>
 <p>I faced this problem of traditionally managing the state (packages) of my Linux
-System imperatively. This caused conflicts and inconsistencies in my
+System imperatively. This always caused conflicts and inconsistencies in my
 environment in various ways. Also I never knew what state of my system is
 leading to an issue. It is very hard to pin point it, when you build you system
 imperatively rather than declaratively.</p>
+<p>NixOS allows you to <strong>interact with your operating system programmatically</strong>, more
+specifically you can declare your packages and configurations and <strong>build your
+system like any other software project that you build</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span><span style="color:#75715e"># /etc/nixos/flake.nix</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NixOS System Flake&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Input to the flake</span>
+</span></span><span style="display:flex;"><span>  inputs <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    nixpkgs-stable<span style="color:#f92672">.</span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;github:NixOS/nixpkgs/nixos-24.11&#34;</span>;
+</span></span><span style="display:flex;"><span>    nixpkgs-unstable<span style="color:#f92672">.</span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;github:NixOS/nixpkgs/nixos-unstable&#34;</span>;
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Flake output</span>
+</span></span><span style="display:flex;"><span>  outputs <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>    nixpkgs-stable<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    nixpkgs-unstable<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>    }:
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># `NIXOS` is hostname here, can be anything</span>
+</span></span><span style="display:flex;"><span>      nixosConfigurations<span style="color:#f92672">.</span>NIXOS <span style="color:#f92672">=</span> nixpkgs-unstable<span style="color:#f92672">.</span>lib<span style="color:#f92672">.</span>nixosSystem <span style="color:#66d9ef">rec</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Architecture</span>
+</span></span><span style="display:flex;"><span>        system <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;x86_64-linux&#34;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Used to provide special arguments to the flake output</span>
+</span></span><span style="display:flex;"><span>        specialArgs <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>          nixos-stable <span style="color:#f92672">=</span> <span style="color:#f92672">import</span> nixpkgs-stable {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">inherit</span> system;
+</span></span><span style="display:flex;"><span>            config<span style="color:#f92672">.</span>allowUnfree <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>          };
+</span></span><span style="display:flex;"><span>        };
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Nix module to be included in the flake</span>
+</span></span><span style="display:flex;"><span>        modules <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">./configuration.nix</span>
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>      };
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>As you see, this is how we define a flake that helps to define our dependencies
+declaratively, in any project. For this system flake, the dependencies are the
+packages that we require in our environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span><span style="color:#75715e"># /etc/nixos/home.nix</span>
+</span></span><span style="display:flex;"><span>{ inputs-from-flake<span style="color:#f92672">,</span> <span style="color:#f92672">...</span> }:
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  home<span style="color:#f92672">.</span>username <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;vanshaj&#34;</span>;
+</span></span><span style="display:flex;"><span>  home<span style="color:#f92672">.</span>homeDirectory <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/home/vanshaj&#34;</span>;
+</span></span><span style="display:flex;"><span>  home<span style="color:#f92672">.</span>packages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> inputs-from-flake; [
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define your dependencies</span>
+</span></span><span style="display:flex;"><span>  ];
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># basic configuration of git</span>
+</span></span><span style="display:flex;"><span>  programs<span style="color:#f92672">.</span>git <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    enable <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>    userName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Vanshaj Saxena&#34;</span>;
+</span></span><span style="display:flex;"><span>    userEmail <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;vs110405@outlook.com&#34;</span>;
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  home<span style="color:#f92672">.</span>stateVersion <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;24.05&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Let home Manager install and manage itself.</span>
+</span></span><span style="display:flex;"><span>  programs<span style="color:#f92672">.</span>home-manager<span style="color:#f92672">.</span>enable <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>You can further extend your flake with the module system provided with Nix.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vanshaj@NIXOS /etc/nixos $ lt
 </span></span><span style="display:flex;"><span>drwxr-xr-x     - root <span style="color:#ae81ff">26</span> Jul  <span style="color:#ae81ff">2024</span>  .
 </span></span><span style="display:flex;"><span>lrwxrwxrwx     - root <span style="color:#ae81ff">26</span> Jul  <span style="color:#ae81ff">2024</span>  ├── configuration.nix -&gt; /home/vanshaj/nixos/configuration.nix
@@ -291,9 +355,27 @@ imperatively rather than declaratively.</p>
 </span></span><span style="display:flex;"><span>lrwxrwxrwx     - root <span style="color:#ae81ff">26</span> Jul  <span style="color:#ae81ff">2024</span>  ├── flake.nix -&gt; /home/vanshaj/nixos/flake.nix
 </span></span><span style="display:flex;"><span>lrwxrwxrwx     - root <span style="color:#ae81ff">26</span> Jul  <span style="color:#ae81ff">2024</span>  ├── hardware-configuration.nix -&gt; /home/vanshaj/nixos/hardware-configuration.nix
 </span></span><span style="display:flex;"><span>lrwxrwxrwx     - root <span style="color:#ae81ff">26</span> Jul  <span style="color:#ae81ff">2024</span>  └── home.nix -&gt; /home/vanshaj/nixos/home.nix
-</span></span></code></pre></div><p>Now, whenever there is a problem in the system you could literally <code>git bisect</code>
+</span></span></code></pre></div><p>This makes debugging and maintaining your project much easier.
+Now, whenever there is a problem in the system you could literally <code>git bisect</code>
 your system configuration like a traditional software.</p>
-<p>Here is the <a href="https://github.com/VanshajSaxena/nixos-config">source code</a> for anyone interested in nerding out.</p>
+<p>Not only Nix allows to you build declaratively, it guarantees <strong>reproducibility
+and easy rollbacks</strong>.</p>
+<hr>
+
+
+
+    
+    <div style="text-align: center;">
+        <a href="/projects/nix-and-nixos/Systemdboot-Screenshot.jpg" target="_blank">
+            <img src="/projects/nix-and-nixos/Systemdboot-Screenshot_hu_57b7a0956e3114d8.jpg" alt="" style="max-width: 100%; height: auto; display: block; margin: auto;">
+        </a>
+    </div>
+
+
+<hr>
+<p>This <strong>immutability</strong> and <strong>reproducibility</strong> is the cause I use Nix for my projects
+and my system.</p>
+<p><a href="https://github.com/VanshajSaxena/nixos-config">Source code</a></p>
 
 
   </div>
