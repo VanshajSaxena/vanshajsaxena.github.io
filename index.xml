@@ -68,9 +68,9 @@ a separate repo for the problems that I solve on Leetcode.&lt;/p&gt;</descriptio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/fable/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/LMS_User&#34;&gt;User Service source code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/LMS_User&#34;&gt;&lt;strong&gt;User Service source code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/LMS_Admin_Librarian&#34;&gt;Admin Service source code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/LMS_Admin_Librarian&#34;&gt;&lt;strong&gt;Admin Service source code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Fable is a Software as a Service (SaaS) Library Management System (LMS)
 Software.&lt;/p&gt;
 &lt;p&gt;I worked on Fable as a part of an Internship at Infosys Limited,
@@ -122,7 +122,7 @@ administrators. I worked as the &lt;strong&gt;backend architect&lt;/strong&gt; a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/nix-and-nixos/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nixos-config&#34;&gt;Source code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nixos-config&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt; is a GNU/Linux distribution that focuses on
 reproducibility, declarative configuration, and robust package management.&lt;/p&gt;
 &lt;p&gt;If you have ever used GNU/Linux Operating System you must know a large part of
@@ -139,7 +139,7 @@ responsibility of having to manage the complexity of the underlying system.&lt;/
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/carenote/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/CareNote&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/CareNote&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;My first team project was &lt;strong&gt;CareNote&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;It was in intense journey to first come up
 with a problem that has some meaning and is relevant to at least some people.
@@ -154,7 +154,7 @@ configuring my development experience in &lt;a href=&#34;https://vanshaj.xyz/pro
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/neovim/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nvim&#34;&gt;Source Code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nvim&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://neovim.io/&#34;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; is a hyperextensible modal text editor based
 on Vim.&lt;/p&gt;
 &lt;p&gt;I started using Vim during the first year of my engineering and instantly knew
@@ -184,7 +184,7 @@ feature set of org-mode.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://vanshaj.xyz/projects/this-site/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/vanshaj-saxena-hugo&#34;&gt;Source code&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/vanshaj-saxena-hugo&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This site is built with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This allowed me to showcase my projects and my thoughts to you. The site has a
 really simple hierarchical structure, supporting &lt;a href=&#34;https://vanshaj.xyz/posts/&#34;&gt;blogs&lt;/a&gt;
