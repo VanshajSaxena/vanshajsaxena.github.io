@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Topics on @vanshaj.xyz</title>
-    <link>https://vanshaj.xyz/topics/</link>
-    <description>Recent content in Topics on @vanshaj.xyz</description>
-    <generator>Hugo -- 0.147.8</generator>
+    <title>Topics on root@vanshajsaxena</title>
+    <link>https://vanshajsaxena.com/topics/</link>
+    <description>Recent content in Topics on root@vanshajsaxena</description>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Sep 2024 04:09:14 +0530</lastBuildDate>
-    <atom:link href="https://vanshaj.xyz/topics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vanshajsaxena.com/topics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
-      <link>https://vanshaj.xyz/topics/java/</link>
+      <link>https://vanshajsaxena.com/topics/java/</link>
       <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
-      <guid>https://vanshaj.xyz/topics/java/</guid>
+      <guid>https://vanshajsaxena.com/topics/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>https://vanshaj.xyz/topics/linux/</link>
+      <link>https://vanshajsaxena.com/topics/linux/</link>
       <pubDate>Sat, 14 Sep 2024 04:09:14 +0530</pubDate>
-      <guid>https://vanshaj.xyz/topics/linux/</guid>
+      <guid>https://vanshajsaxena.com/topics/linux/</guid>
       <description></description>
     </item>
   </channel>

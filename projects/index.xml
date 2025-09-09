@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Projects on @vanshaj.xyz</title>
-    <link>https://vanshaj.xyz/projects/</link>
-    <description>Recent content in Projects on @vanshaj.xyz</description>
-    <generator>Hugo -- 0.147.8</generator>
+    <title>Projects on root@vanshajsaxena</title>
+    <link>https://vanshajsaxena.com/projects/</link>
+    <description>Recent content in Projects on root@vanshajsaxena</description>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://vanshaj.xyz/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vanshajsaxena.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Auction Hub</title>
-      <link>https://vanshaj.xyz/projects/auction-system/</link>
+      <link>https://vanshajsaxena.com/projects/auction-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/auction-system/</guid>
+      <guid>https://vanshajsaxena.com/projects/auction-system/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/auction-system&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Auction Hub&lt;/strong&gt; is a backend service that is designed to serve a system of online
@@ -28,9 +28,9 @@ approach to allow for its client to know exactly what to expect from the API.&lt
     </item>
     <item>
       <title>Backend and Java</title>
-      <link>https://vanshaj.xyz/projects/backend-and-java/</link>
+      <link>https://vanshajsaxena.com/projects/backend-and-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/backend-and-java/</guid>
+      <guid>https://vanshajsaxena.com/projects/backend-and-java/</guid>
       <description>&lt;p&gt;Java is the first language I learnt because of its verbosity and acceptance.&lt;/p&gt;
 &lt;p&gt;There are a number of small projects I have worked upon while I was learning:&lt;/p&gt;
 &lt;ul&gt;
@@ -49,9 +49,9 @@ a separate repo for the problems that I solve on Leetcode.&lt;/p&gt;</descriptio
     </item>
     <item>
       <title>Fable</title>
-      <link>https://vanshaj.xyz/projects/fable/</link>
+      <link>https://vanshajsaxena.com/projects/fable/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/fable/</guid>
+      <guid>https://vanshajsaxena.com/projects/fable/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/LMS_User&#34;&gt;&lt;strong&gt;User Service source code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -60,7 +60,7 @@ a separate repo for the problems that I solve on Leetcode.&lt;/p&gt;</descriptio
 Software.&lt;/p&gt;
 &lt;p&gt;I worked on Fable as a part of an Internship at Infosys Limited,
 Mysuru, which I received through a challenging selection process, I have a post
-about it, &lt;a href=&#34;https://vanshaj.xyz/posts/got-selected/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+about it, &lt;a href=&#34;https://vanshajsaxena.com/posts/got-selected/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here are the videos of the actual developed applications.&lt;/p&gt;
 &lt;hr&gt;
 
@@ -73,7 +73,7 @@ about it, &lt;a href=&#34;https://vanshaj.xyz/posts/got-selected/&#34;&gt;here&l
 
   &lt;div class=&#34;align-center&#34;&gt;
     &lt;video controls width=&#34;300&#34; height=&#34;450&#34;&gt;
-      &lt;source src=&#34;https://vanshaj.xyz/projects/fable/FableForMembersandUsers.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      &lt;source src=&#34;https://vanshajsaxena.com/projects/fable/FableForMembersandUsers.mp4&#34; type=&#34;video/mp4&#34;&gt;
       Your browser does not support the video tag.
     &lt;/video&gt;
   &lt;/div&gt;
@@ -89,7 +89,7 @@ about it, &lt;a href=&#34;https://vanshaj.xyz/posts/got-selected/&#34;&gt;here&l
 
   &lt;div class=&#34;align-center&#34;&gt;
     &lt;video controls width=&#34;600&#34; height=&#34;450&#34;&gt;
-      &lt;source src=&#34;https://vanshaj.xyz/projects/fable/FableForAdminsandLibrarians.mp4&#34; type=&#34;video/mp4&#34;&gt;
+      &lt;source src=&#34;https://vanshajsaxena.com/projects/fable/FableForAdminsandLibrarians.mp4&#34; type=&#34;video/mp4&#34;&gt;
       Your browser does not support the video tag.
     &lt;/video&gt;
   &lt;/div&gt;
@@ -103,9 +103,9 @@ administrators. I worked as the &lt;strong&gt;backend architect&lt;/strong&gt; a
     </item>
     <item>
       <title>Nix and NixOS</title>
-      <link>https://vanshaj.xyz/projects/nix-and-nixos/</link>
+      <link>https://vanshajsaxena.com/projects/nix-and-nixos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/nix-and-nixos/</guid>
+      <guid>https://vanshajsaxena.com/projects/nix-and-nixos/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nixos-config&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt; is a GNU/Linux distribution that focuses on
@@ -120,9 +120,9 @@ responsibility of having to manage the complexity of the underlying system.&lt;/
     </item>
     <item>
       <title>CareNote</title>
-      <link>https://vanshaj.xyz/projects/carenote/</link>
+      <link>https://vanshajsaxena.com/projects/carenote/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/carenote/</guid>
+      <guid>https://vanshajsaxena.com/projects/carenote/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/CareNote&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;My first team project was &lt;strong&gt;CareNote&lt;/strong&gt;.&lt;/p&gt;
@@ -131,13 +131,13 @@ with a problem that has some meaning and is relevant to at least some people.
 Then develop the actual solution that can solve &lt;em&gt;this real problem in the real
 world&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Before this I had always wrote small programs that only served me, mainly in
-configuring my development experience in &lt;a href=&#34;https://vanshaj.xyz/projects/neovim/&#34;&gt;Neovim&lt;/a&gt;, which is a small project in itself maintained by me.&lt;/p&gt;</description>
+configuring my development experience in &lt;a href=&#34;https://vanshajsaxena.com/projects/neovim/&#34;&gt;Neovim&lt;/a&gt;, which is a small project in itself maintained by me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neovim</title>
-      <link>https://vanshaj.xyz/projects/neovim/</link>
+      <link>https://vanshajsaxena.com/projects/neovim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/neovim/</guid>
+      <guid>https://vanshajsaxena.com/projects/neovim/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/nvim&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://neovim.io/&#34;&gt;&lt;strong&gt;Neovim&lt;/strong&gt;&lt;/a&gt; is a hyperextensible modal text editor based
@@ -151,9 +151,9 @@ among others. It is configured using a simple language called
     </item>
     <item>
       <title>Neorg and Notes</title>
-      <link>https://vanshaj.xyz/projects/neorg-and-notes/</link>
+      <link>https://vanshajsaxena.com/projects/neorg-and-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/neorg-and-notes/</guid>
+      <guid>https://vanshajsaxena.com/projects/neorg-and-notes/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/nvim-neorg/neorg&#34;&gt;Neorg&lt;/a&gt; is a note-taking software used to
 take structured notes, project and task management, time tracking, writing
 typeset documents and more.&lt;/p&gt;
@@ -165,14 +165,14 @@ feature set of org-mode.&lt;/p&gt;</description>
     </item>
     <item>
       <title>This Site</title>
-      <link>https://vanshaj.xyz/projects/this-site/</link>
+      <link>https://vanshajsaxena.com/projects/this-site/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vanshaj.xyz/projects/this-site/</guid>
+      <guid>https://vanshajsaxena.com/projects/this-site/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/VanshajSaxena/vanshaj-saxena-hugo&#34;&gt;&lt;strong&gt;Source Code&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This site is built with &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This allowed me to showcase my projects and my thoughts to you. The site has a
-really simple hierarchical structure, supporting &lt;a href=&#34;https://vanshaj.xyz/posts/&#34;&gt;blogs&lt;/a&gt;
+really simple hierarchical structure, supporting &lt;a href=&#34;https://vanshajsaxena.com/posts/&#34;&gt;blogs&lt;/a&gt;
 and project posts.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;writing-a-simple-blog-post&#34;&gt;Writing a simple blog post&lt;/h3&gt;
